@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [HideInInspector] public float HP;
+    public float HP;
     public float MaxHP = 200;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

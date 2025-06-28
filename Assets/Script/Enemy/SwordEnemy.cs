@@ -9,6 +9,7 @@ public class SwordEnemy : Enemy
 
     private void Start()
     {
+        HP = MaxHP;
         PlayerPosition = GameObject.FindGameObjectWithTag("Player").transform;
         agent.stoppingDistance = AttackRange;
     }

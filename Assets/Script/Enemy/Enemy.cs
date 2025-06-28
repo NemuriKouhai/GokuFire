@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [HideInInspector]public float HP;
+    public float HP;
     public float MaxHP = 150;
     [SerializeField] protected Transform PlayerPosition; 
     public virtual void GetDamage(float Damage)
