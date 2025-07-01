@@ -484,7 +484,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 886213863}
         m_TargetAssemblyTypeName: change, Assembly-CSharp
-        m_MethodName: OnLoadSceneSingle
+        m_MethodName: change_button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
