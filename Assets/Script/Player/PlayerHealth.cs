@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
         HP -= Damage;
         if (HP <= 0)
         {
+            SceneManager.LoadScene("GameOver");
             gameObject.SetActive(false);
         }
     }

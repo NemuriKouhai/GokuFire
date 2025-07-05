@@ -123,6 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796bbfa72d60220499fa7b7008a8b851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!54 &4387691549031866207
 Rigidbody:
   m_ObjectHideFlags: 0

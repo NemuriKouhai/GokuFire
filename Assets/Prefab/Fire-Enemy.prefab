@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 4678593626243324685}
   - component: {fileID: 3765259910462133156}
   - component: {fileID: 6304280429511610359}
-  m_Layer: 0
+  - component: {fileID: -2347183161928891572}
+  m_Layer: 8
   m_Name: Fire-Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,3 +154,30 @@ MonoBehaviour:
   FireDelay: 2
   FireForce: 1.5
   FireBallPrefab: {fileID: 8869851418388731269, guid: 08f049f3a73d19748a0e24d028ef1de2, type: 3}
+--- !u!54 &-2347183161928891572
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6345784620866149837}
+  serializedVersion: 4
+  m_Mass: 10
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
