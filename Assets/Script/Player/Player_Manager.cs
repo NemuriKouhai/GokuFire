@@ -8,6 +8,9 @@ public class Player_Manager : MonoBehaviour
 
     Rigidbody rb;
 
+    Vector3 moveInput;
+    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,29 +20,34 @@ public class Player_Manager : MonoBehaviour
 
      void Update()
      {
-      // WƒL[i‘O•ûˆÚ“®j
-       if (Input.GetKey(KeyCode.W))
-       {
-             transform.position += speed * transform.forward * Time.deltaTime;
-       }
+      // Wï¿½Lï¿½[ï¿½iï¿½Oï¿½ï¿½ï¿½Ú“ï¿½ï¿½j
+    //    if (Input.GetKey(KeyCode.W))
+    //    {
+    //          transform.position += speed * transform.forward * Time.deltaTime;
+             
+    //    }
 
-       // SƒL[iŒã•ûˆÚ“®j
-       if (Input.GetKey(KeyCode.S))
-       {
-            transform.position -= speed * transform.forward * Time.deltaTime;
-       }
+    //    // Sï¿½Lï¿½[ï¿½iï¿½ï¿½ï¿½ï¿½Ú“ï¿½ï¿½j
+    //    if (Input.GetKey(KeyCode.S))
+    //    {
+    //         transform.position -= speed * transform.forward * Time.deltaTime;
+    //    }
 
-        // DƒL[i‰EˆÚ“®j
-        if (Input.GetKey(KeyCode.D))
-        {
-             transform.position += speed * transform.right * Time.deltaTime;
-        }
+    //     // Dï¿½Lï¿½[ï¿½iï¿½Eï¿½Ú“ï¿½ï¿½j
+    //     if (Input.GetKey(KeyCode.D))
+    //     {
+    //          transform.position += speed * transform.right * Time.deltaTime;
+    //     }
 
-         // AƒL[i¶ˆÚ“®j
-         if (Input.GetKey(KeyCode.A))
-         {
-             transform.position -= speed * transform.right * Time.deltaTime;
-         }
+    //      // Aï¿½Lï¿½[ï¿½iï¿½ï¿½ï¿½Ú“ï¿½ï¿½j
+    //      if (Input.GetKey(KeyCode.A))
+    //      {
+    //          transform.position -= speed * transform.right * Time.deltaTime;
+    //      }
+
+        moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0 ,Input.GetAxisRaw("Vertical"));
+        
+        rb.MovePosition(rb.position + moveInput.normalized*speed*Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
@@ -55,5 +63,7 @@ public class Player_Manager : MonoBehaviour
             isGrounded = true;
         }
     }
+
+
 
 }
